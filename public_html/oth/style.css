@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+}
+@font-face {
+	font-family: 'Tajawal-Regular';
+  	src: url(fonts/Tajawal-Regular.ttf);
+  
+  	font-weight: none;
+}
+@font-face {
+	font-family: 'Tajawal-Regular';
+  	src: url(fonts/Tajawal-Light.ttf);
+  	
+  	font-weight: lighter;
+}
+body {
+    background-image: url(images/back.png);
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	height: 1500px;
+  	overflow: hidden;
+  	scroll-behavior: smooth;
+ 	user-select: none;
+}
+::-webkit-scrollbar {
+  	width: 5px;
+}
+::-webkit-scrollbar-track {
+  	background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  	background-color: #00F318;
+}
+#text {
+  	box-sizing: border-box;
+  	position: fixed;
+	width: 100%;
+	top: 218px;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 90px;
+	text-align: center;
+  	-webkit-text-stroke: 3px rgba(255, 255, 255, 0.85);
+}
+#dl{
+	position: fixed;
+  	display: block;
+  	top: 50%;
+  	margin-left: 50%;
+    margin-right: -50%;
+  	transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+#t-main {
+	position: fixed;
+  	color: white;
+	top: 60%;
+	font-size: 128px;
+ 	margin-left: 50%;
+    margin-right: -50%;
+  	transform: translate(-50%, -50%);
+}
+#t-A {
+	animation: A-1 5s infinite;
+}
+#t-B {
+	animation: A-2 5s infinite;
+}
+#t-C {
+	animation: A-3 5s infinite;
+}
+@keyframes A-1 {
+  0% {
+  	opacity: 0;
+  }
+  25% {
+  	opacity: 1;
+  }
+  50% {
+  	opacity: 1;
+  }
+  75% {
+  	opacity: 1;
+  }
+  100% {
+  	opacity: 0;
+  }
+}
+@keyframes A-2 {
+  0% {
+  	opacity: 0;
+  }
+  25% {
+  	opacity: 0;
+  }
+  50% {
+  	opacity: 1;
+  }
+  75% {
+  	opacity: 1;
+  }
+  100% {
+  	opacity: 0;
+  }
+}
+@keyframes A-3 {
+  0% {
+  	opacity: 0;
+  }
+  25% {
+  	opacity: 0;
+  }
+  50% {
+  	opacity: 0;
+  }
+  75% {
+  	opacity: 1;
+  }
+  100% {
+  	opacity: 0;
+  }
+}
+#s {
+	opacity: 0;
+}
+#pl {
+	position: fixed;
+  	top: 5.5%;
+  	margin-left: 50%;
+    margin-right: -50%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+}
+.left {
+  	font-weight: lighter;
+	margin-left: 40px;
+  	text-decoration: none;
+  	font-size: 64px;
+  	font-family: 'Tajawal-Regular';
+}
+.left:hover {
+	cursor: pointer;
+}
+#home {
+  	font-weight: lighter;
+  	text-decoration: none;
+  	font-size: 80px;
+  	font-family: 'Tajawal-Regular';
+}
+#home:hover {
+	cursor: pointer;
+}
+#underPl {
+  	position: fixed;
+	width: 90%;
+	margin-left: 50%;
+    margin-right: -50%;
+  	transform: translate(-50%, -50%);
+	top: 12%;
+	border: 0.4px solid #FFFFFF;
+}
+#hi {
+  	position: fixed;
+  	font-size: 80px;
+	color: white;
+  	top: 20%;
+  	margin-left: 10%;
+  	font-weight: 500;
+	font-family: 'Tajawal-Regular';
+}
+.up {
+	margin-top: 10px;
+}
+.gbg {
+  background-color: #00F318;
+  color: black;
+}
+#underHi {
+  	position: fixed;
+	width: 92%;
+	margin-left: 50%;
+    margin-right: -50%;
+  	transform: translate(-50%, -50%);
+	top: 90%;
+	border: 0.4px solid #FFFFFF;
+}
+#D {
+  	opacity: 0;
+}
+.design {
+  	position: fixed;
+  	color: white;
+  	top: 45%;
+  	margin-left: 50%;
+    margin-right: -50%;
+  	transform: translate(-50%, -50%);
+}
+.design:hover {
+	cursor: pointer;
+}
+#webDesign {
+  	margin-left: 20%;
+  	font-size: 96px;
+	font-family: 'Tajawal-Regular';
+}
+#graphicDesign {
+  	margin-left: 75%;
+  	font-size: 96px;
+	font-family: 'Tajawal-Regular';
+}
+#WD {
+	opacity: 0;
+}
+.back {
+  	top: 12%;
+  	left: 4%;
+	position: fixed;
+  	color: white;
+  	font-size: 64px;
+  	font-weight: lighter;
+}
+.back:hover {
+	cursor: pointer;
+}
+.soon {
+	position: fixed;
+  	color: white;
+  	top: 50%;
+  	margin-left: 50%;
+    margin-right: -50%;
+  	transform: translate(-50%, -50%);
+  	font-size: 256px;
+}
+#DG {
+	opacity: 0;
+}
+#DGim {
+	opacity: 0;
+}
+.images {
+  	margin-top: 10%;
+}
+#despair {
+  	width: 400px;
+  	margin-left: 550px;
+  	margin-top: -600px;
+}
+#peace {
+  	margin-left: 200px;
+	margin-top: -250px;
+}
+#hell {
+	margin-left: 1050px;
+  	margin-top: -2500px;
+}
