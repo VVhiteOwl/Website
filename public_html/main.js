@@ -92,6 +92,10 @@ function sHome() {
     }
   
   	if (big1 === 'projectsFontSize') {
+      	wbg.style.pointerEvents = "auto";	
+      	wbg.style.cursor = "pointer";
+      
+      
     	let start = Date.now();
   	
 		let timer = setInterval(function() {
@@ -100,7 +104,9 @@ function sHome() {
 		projects.style.fontSize = 64 + timePassed / 20 + "px";
         hi.style.opacity = 1 - timePassed / 320;
 		home.style.fontSize = 80 - timePassed / 20 + "px";
-
+        project1.style.opacity = 0 + timePassed / 320;
+	
+        if (timePassed > 320) clearInterval(timer);
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -108,6 +114,9 @@ function sHome() {
     }
   
   	if (big1 === 'aboutFontSize') {
+      	wbg.style.pointerEvents = "auto";	
+      	wbg.style.cursor = "pointer";
+      
     	let start = Date.now();
   	
 		let timer = setInterval(function() {
@@ -125,7 +134,7 @@ function sHome() {
 }
 function sWorks() {
 	if (big1 === 'homeFontSize') {
-    	if(WD.style.opacity > 0.99) {
+    	if(WD.style.opacity > 0.1) {
         	let start = Date.now();
       	
 			let timer = setInterval(function() {
@@ -135,14 +144,14 @@ function sWorks() {
         	hi.style.opacity = 0 + timePassed / 320;
         	WD.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
+			wdT.style.opacity = 1 - timePassed / 320;
         
-        	if (timePassed > 318) soon.classList.remove('soon');
         	if (timePassed > 319) back.classList.remove('back');
-   			if (timePassed > 320) clearInterval(timer);         
+   			if (timePassed > 320) clearInterval(timer);
 
 			}, 20); return small1 = big1;
         }
-      	else if(DG.style.opacity > 0.99) {
+      	else if(DG.style.opacity > 0.1) {
 			document.body.style.overflowY = "hidden";
         	let start = Date.now();
       	
@@ -152,8 +161,9 @@ function sWorks() {
 			home.style.fontSize = 64 + timePassed / 20 + "px";
         	hi.style.opacity = 0 + timePassed / 320;
         	DG.style.opacity = 1 - timePassed / 320;
-            DGim.style.opacity = 1 - timePassed / 320;
+            images.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
+            gdT.style.opacity = 1 - timePassed / 320;
         
         	if (timePassed > 319) backS.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);         
@@ -170,8 +180,7 @@ function sWorks() {
         	hi.style.opacity = 0 + timePassed / 320;
         	D.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
-        
-        	if (timePassed > 316) soon.classList.remove('soon');
+        	
         	if (timePassed > 317) back.classList.remove('back');
         	if (timePassed > 318) webDesign.classList.remove('design');
         	if (timePassed > 319) graphicDesign.classList.remove('design');
@@ -181,7 +190,10 @@ function sWorks() {
     }
   
   	if (big1 === 'projectsFontSize') {
-    	if(WD.style.opacity > 0.99) {
+    	if(WD.style.opacity > 0.1) {
+      		wbg.style.pointerEvents = "auto";	
+      		wbg.style.cursor = "pointer";
+          
         	let start = Date.now();
       	
 			let timer = setInterval(function() {
@@ -190,15 +202,19 @@ function sWorks() {
 			projects.style.fontSize = 64 + timePassed / 20 + "px";
         	WD.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
-        
-        	if (timePassed > 318) soon.classList.remove('soon');
+			wdT.style.opacity = 1 - timePassed / 320;
+            project1.style.opacity = 0 + timePassed / 320;
+        	
         	if (timePassed > 319) back.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);         
 
 			}, 20); return small1 = big1;
         }
-      	else if(DG.style.opacity > 0.99) {
+      	else if(DG.style.opacity > 0.1) {
+      		wbg.style.pointerEvents = "auto";	
+      		wbg.style.cursor = "pointer";
           	document.body.style.overflowY = "hidden";
+          
         	let start = Date.now();
       	
 			let timer = setInterval(function() {
@@ -206,15 +222,20 @@ function sWorks() {
 
 			projects.style.fontSize = 64 + timePassed / 20 + "px";
         	DG.style.opacity = 1 - timePassed / 320;
-            DGim.style.opacity = 1 - timePassed / 320;
+            images.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
+            gdT.style.opacity = 1 - timePassed / 320;
+            project1.style.opacity = 0 + timePassed / 320;
         
         	if (timePassed > 319) backS.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);         
 
 			}, 20); return small1 = big1;
         }
-        else {
+        else {      
+      		wbg.style.pointerEvents = "auto";	
+      		wbg.style.cursor = "pointer";
+          	
         	let start = Date.now();
       	
 			let timer = setInterval(function() {
@@ -223,18 +244,19 @@ function sWorks() {
 			projects.style.fontSize = 64 + timePassed / 20 + "px";
         	D.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
-        
-        	if (timePassed > 316) soon.classList.remove('soon');
+        	
         	if (timePassed > 317) back.classList.remove('back');
         	if (timePassed > 318) webDesign.classList.remove('design');
         	if (timePassed > 319) graphicDesign.classList.remove('design');
    			if (timePassed > 320) clearInterval(timer);  
+            project1.style.opacity = 0 + timePassed / 320;
         	}, 20); return small1 = big1;
        	}	
     }
   
   	if (big1 === 'aboutFontSize') {
-    	if(WD.style.opacity > 0.99) {
+    	if(WD.style.opacity > 0.1) {
+          
         	let start = Date.now();
       	
 			let timer = setInterval(function() {
@@ -243,15 +265,16 @@ function sWorks() {
 			about.style.fontSize = 64 + timePassed / 20 + "px";
         	WD.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
-        
-        	if (timePassed > 318) soon.classList.remove('soon');
+			wdT.style.opacity = 1 - timePassed / 320;
+        	
         	if (timePassed > 319) back.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);         
 
 			}, 20); return small1 = big1;
         }
-      	else if(DG.style.opacity > 0.99) {
+      	else if(DG.style.opacity > 0.1) {
           	document.body.style.overflowY = "hidden";
+          
         	let start = Date.now();
       	
 			let timer = setInterval(function() {
@@ -259,8 +282,9 @@ function sWorks() {
 
 			about.style.fontSize = 64 + timePassed / 20 + "px";
         	DG.style.opacity = 1 - timePassed / 320;
-            DGim.style.opacity = 1 - timePassed / 320;
+            images.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
+            gdT.style.opacity = 1 - timePassed / 320;
         
         	if (timePassed > 319) backS.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);         
@@ -276,8 +300,7 @@ function sWorks() {
 			about.style.fontSize = 64 + timePassed / 20 + "px";
         	D.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
-        
-        	if (timePassed > 315) soon.classList.remove('soon');
+        	
         	if (timePassed > 316) back.classList.remove('back');
         	if (timePassed > 318) webDesign.classList.remove('design');
         	if (timePassed > 319) graphicDesign.classList.remove('design');
@@ -296,7 +319,10 @@ function sProjects() {
 		home.style.fontSize = 64 + timePassed / 20 + "px";
         hi.style.opacity = 0 + timePassed / 320;
 		projects.style.fontSize = 80 - timePassed / 20 + "px";
-
+        project1.style.opacity = 1 - timePassed / 320;
+		  
+		if (timePassed > 318) wbg.style.pointerEvents = "none";	
+      	if (timePassed > 319) wbg.style.cursor = "default";
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -315,7 +341,10 @@ function sProjects() {
 		works.style.fontSize = 64 + timePassed / 20 + "px";
         D.style.opacity = 0 + timePassed / 320;
 		projects.style.fontSize = 80 - timePassed / 20 + "px";
-
+        project1.style.opacity = 1 - timePassed / 320;
+          
+		if (timePassed > 318) wbg.style.pointerEvents = "none";	
+      	if (timePassed > 319) wbg.style.cursor = "default";
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -323,6 +352,7 @@ function sProjects() {
     }
   
   	if (big1 === 'aboutFontSize') {
+      
     	let start = Date.now();
   	
 		let timer = setInterval(function() {
@@ -330,7 +360,10 @@ function sProjects() {
 
 		about.style.fontSize = 64 + timePassed / 20 + "px";
 		projects.style.fontSize = 80 - timePassed / 20 + "px";
-
+        project1.style.opacity = 1 - timePassed / 320;
+          
+		if (timePassed > 318) wbg.style.pointerEvents = "none";	
+      	if (timePassed > 319) wbg.style.cursor = "default";
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -347,7 +380,7 @@ function sAbout() {
 		home.style.fontSize = 64 + timePassed / 20 + "px";
         hi.style.opacity = 0 + timePassed / 320;
 		about.style.fontSize = 80 - timePassed / 20 + "px";
-
+        
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -366,7 +399,7 @@ function sAbout() {
 		works.style.fontSize = 64 + timePassed / 20 + "px";
         D.style.opacity = 0 + timePassed / 320;
 		about.style.fontSize = 80 - timePassed / 20 + "px";
-
+		
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -374,6 +407,9 @@ function sAbout() {
     }
   
   	if (big1 === 'projectsFontSize') {
+      	wbg.style.pointerEvents = "auto";	
+      	wbg.style.cursor = "pointer";
+      
     	let start = Date.now();
   	
 		let timer = setInterval(function() {
@@ -381,7 +417,8 @@ function sAbout() {
 
 		projects.style.fontSize = 64 + timePassed / 20 + "px";
 		about.style.fontSize = 80 - timePassed / 20 + "px";
-
+        project1.style.opacity = 0 + timePassed / 320;
+		
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -441,7 +478,6 @@ function unFontSizeGD() {
 function clickWD() {
     	if(D.style.opacity > 0.99) {
           back.classList.add('back');
-          soon.classList.add('soon');
           let start = Date.now();
   	
 			let timer = setInterval(function() {
@@ -449,7 +485,7 @@ function clickWD() {
 
         	D.style.opacity = 1 - timePassed / 320;
             WD.style.opacity = 0 + timePassed / 320;
-			
+            wdT.style.opacity = 0 + timePassed / 320;
             
         	if (timePassed > 318) webDesign.classList.remove('design');
         	if (timePassed > 319) graphicDesign.classList.remove('design');
@@ -492,9 +528,9 @@ function clickBack() {
 			let timePassed = Date.now() - start;
 
         	WD.style.opacity = 1 - timePassed / 320;
+			wdT.style.opacity = 1 - timePassed / 320;
             D.style.opacity = 0 + timePassed / 320;
-			
-            if (timePassed > 318) soon.classList.remove('soon');
+            
         	if (timePassed > 319) back.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);
 
@@ -514,7 +550,8 @@ function clickGD() {
 
         	D.style.opacity = 1 - timePassed / 320;
             DG.style.opacity = 0 + timePassed / 320;
-            DGim.style.opacity = 0 + timePassed / 320;
+            images.style.opacity = 0 + timePassed / 320;
+            gdT.style.opacity = 0 + timePassed / 320;
             
         	if (timePassed > 318) webDesign.classList.remove('design');
         	if (timePassed > 319) graphicDesign.classList.remove('design');
@@ -559,7 +596,8 @@ function clickBackS() {
 			let timePassed = Date.now() - start;
 
         	DG.style.opacity = 1 - timePassed / 320;
-            DGim.style.opacity = 1 - timePassed / 320;
+            images.style.opacity = 1 - timePassed / 320;
+            gdT.style.opacity = 1 - timePassed / 320;
             D.style.opacity = 0 + timePassed / 320;
 			
         	if (timePassed > 319) backS.classList.remove('back');
@@ -568,3 +606,20 @@ function clickBackS() {
 			}, 20);
 		}
 }
+
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting && images.style.opacity > 0.99) {
+       change.target.classList.add('element-show');
+      }
+    });
+  }
+  
+  let options = {
+    threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.im');
+
+  for (let elm of elements) {
+    observer.observe(elm);
+  }

@@ -6,12 +6,28 @@
   	src: url(fonts/Tajawal-Regular.ttf);
   
   	font-weight: none;
+  	font-style: none;
 }
 @font-face {
-	font-family: 'Tajawal-Regular';
+	font-family: 'Tajawal-Light';
   	src: url(fonts/Tajawal-Light.ttf);
-  	
-  	font-weight: lighter;
+  
+  	font-weight: none;
+  	font-style: none;
+}
+@font-face {
+	font-family: 'Tajawal-ExtraLight';
+  	src: url(fonts/Tajawal-ExtraLight.ttf);
+  
+  	font-weight: none;
+  	font-style: none;
+}
+@font-face {
+	font-family: 'Tajawal-Black';
+  	src: url(fonts/Tajawal-Black.ttf);
+  
+  	font-weight: none;
+  	font-style: none;
 }
 body {
     background-image: url(images/back.png);
@@ -22,6 +38,7 @@ body {
   	overflow: hidden;
   	scroll-behavior: smooth;
  	user-select: none;
+	font-family: 'Tajawal-Regular';
 }
 ::-webkit-scrollbar {
   	width: 5px;
@@ -37,11 +54,10 @@ body {
   	position: fixed;
 	width: 100%;
 	top: 218px;
-	font-style: normal;
-	font-weight: 900;
 	font-size: 90px;
 	text-align: center;
   	-webkit-text-stroke: 3px rgba(255, 255, 255, 0.85);
+  	font-family: 'Tajawal-Black';
 }
 #dl{
 	position: fixed;
@@ -131,22 +147,19 @@ body {
     margin-right: -50%;
   	transform: translate(-50%, -50%);
   	color: white;
+	font-family: 'Tajawal-ExtraLight';
 }
 .left {
-  	font-weight: lighter;
 	margin-left: 40px;
   	text-decoration: none;
   	font-size: 64px;
-  	font-family: 'Tajawal-Regular';
 }
 .left:hover {
 	cursor: pointer;
 }
 #home {
-  	font-weight: lighter;
   	text-decoration: none;
   	font-size: 80px;
-  	font-family: 'Tajawal-Regular';
 }
 #home:hover {
 	cursor: pointer;
@@ -166,11 +179,12 @@ body {
 	color: white;
   	top: 20%;
   	margin-left: 10%;
-  	font-weight: 500;
-	font-family: 'Tajawal-Regular';
 }
 .up {
 	margin-top: 10px;
+}
+.up2 {
+	margin-top: 20px;
 }
 .gbg {
   background-color: #00F318;
@@ -195,19 +209,17 @@ body {
   	margin-left: 50%;
     margin-right: -50%;
   	transform: translate(-50%, -50%);
+  	margin-left: 20%;
+  	font-size: 96px;
+	font-family: 'Tajawal-Light';
 }
 .design:hover {
 	cursor: pointer;
 }
-#webDesign {
-  	margin-left: 20%;
-  	font-size: 96px;
-	font-family: 'Tajawal-Regular';
-}
 #graphicDesign {
   	margin-left: 75%;
   	font-size: 96px;
-	font-family: 'Tajawal-Regular';
+	font-family: 'Tajawal-Light';
 }
 #WD {
 	opacity: 0;
@@ -218,7 +230,7 @@ body {
 	position: fixed;
   	color: white;
   	font-size: 64px;
-  	font-weight: lighter;
+  	font-family: 'Tajawal-Light'
 }
 .back:hover {
 	cursor: pointer;
@@ -235,16 +247,14 @@ body {
 #DG {
 	opacity: 0;
 }
-#DGim {
-	opacity: 0;
-}
-.images {
-  	margin-top: 10%;
+#images {
+  	opacity: 0;
+  	margin-top: 40%;
 }
 #despair {
   	width: 400px;
-  	margin-left: 550px;
-  	margin-top: -600px;
+  	margin-left: 580px;
+  	margin-top: -580px;
 }
 #peace {
   	margin-left: 200px;
@@ -253,4 +263,63 @@ body {
 #hell {
 	margin-left: 1050px;
   	margin-top: -2500px;
+}
+.im {
+	opacity: 0;
+    transform: translateY(50px);
+}
+.im.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+}
+#gdT {
+  	position: absolute;
+  	font-size: 48px;
+	color: white;
+  	top: 30%;
+  	margin-left: 5%;
+  	font-weight: 500;
+  	opacity: 0;
+}
+.picD {
+	position: absolute;
+  	left: 102%;
+  	margin-top: -50%;
+  	width: 500px;
+}
+#wdT {
+  	position: fixed;
+  	font-size: 48px;
+	color: white;
+  	top: 30%;
+  	margin-left: 5%;
+  	font-weight: 500;
+  	opacity: 0;
+}
+.picDS {
+	position: fixed;
+  	left: 62%;
+  	margin-top: -27%;
+  	width: 500px;
+}
+#project1 {
+	position: fixed;
+  	font-size: 56px;
+	color: white;
+  	top: 15%;
+  	margin-left: 5%;
+  	opacity: 0;
+}
+.potologo {
+	position: fixed;
+  	margin-left: 44%;
+  	margin-top: -25%;
+  	width: 1000px;
+}
+#wbg {
+	pointer-events: none;
+	cursor: default;
+	background-color: white;
+  	color: black;
 }
