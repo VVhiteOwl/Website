@@ -323,3 +323,59 @@ body {
 	background-color: white;
   	color: black;
 }
+#ab {
+	opacity: 0;
+}
+#plAbout {
+	position: fixed;
+  	top: 32%;
+  	margin-left: 5%;
+  	color: white;
+  	width: 75px;
+	font-family: 'Tajawal-Light';
+}
+#nearPlAbout {
+  	position: fixed;
+	height: 70%;
+  	left: 20%;
+	top: 20%;
+	border: 0.3px solid #FFFFFF;
+}
+.stats {
+  	text-decoration: none;
+  	font-size: 64px;
+}
+.stats:hover {
+	cursor: pointer;
+}
+.otherAbout {
+	text-decoration: none;
+  	font-size: 48px;
+}
+.otherAbout:hover {
+	cursor: pointer;
+}
+#tAbout {
+	left: 22%;
+  	position: fixed;
+  	top: 5%;
+  	color: white;
+  	font-size: 48px;
+  	white-space: pre;
+}
+#tStats {
+  	top: -50%;
+	opacity: 0;
+}
+#tSkills {
+	opacity: 0;
+}
+#tHobbies {
+	opacity: 0;
+}
+#tContact {
+	opacity: 0;
+}
+.t32 {
+	font-size: 32px;
+}

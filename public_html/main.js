@@ -114,8 +114,10 @@ function sHome() {
     }
   
   	if (big1 === 'aboutFontSize') {
-      	wbg.style.pointerEvents = "auto";	
-      	wbg.style.cursor = "pointer";
+      	hobbies.classList.add('otherAbout');
+      	contact.classList.add('otherAbout');
+     	skills.classList.add('otherAbout');
+        stats.classList.add('stats');
       
     	let start = Date.now();
   	
@@ -123,8 +125,11 @@ function sHome() {
 		let timePassed = Date.now() - start;
 
 		about.style.fontSize = 64 + timePassed / 20 + "px";
+        ab.style.opacity = 0 + timePassed / 320;
         hi.style.opacity = 1 - timePassed / 320;
 		home.style.fontSize = 80 - timePassed / 20 + "px";
+        hi.style.opacity = 1 - timePassed / 320;
+        tStats.style.opacity = 0 + timePassed / 320;
 
    		if (timePassed > 320) clearInterval(timer);
 
@@ -256,6 +261,10 @@ function sWorks() {
   
   	if (big1 === 'aboutFontSize') {
     	if(WD.style.opacity > 0.1) {
+      		hobbies.classList.add('otherAbout');
+      		contact.classList.add('otherAbout');
+          	skills.classList.add('otherAbout');
+        	stats.classList.add('stats');
           
         	let start = Date.now();
       	
@@ -263,9 +272,11 @@ function sWorks() {
 			let timePassed = Date.now() - start;
 
 			about.style.fontSize = 64 + timePassed / 20 + "px";
+            ab.style.opacity = 0 + timePassed / 320;
         	WD.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
 			wdT.style.opacity = 1 - timePassed / 320;
+            tStats.style.opacity = 0 + timePassed / 320;
         	
         	if (timePassed > 319) back.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);         
@@ -274,6 +285,10 @@ function sWorks() {
         }
       	else if(DG.style.opacity > 0.1) {
           	document.body.style.overflowY = "hidden";
+      		hobbies.classList.add('otherAbout');
+      		contact.classList.add('otherAbout');
+          	skills.classList.add('otherAbout');
+       		stats.classList.add('stats');
           
         	let start = Date.now();
       	
@@ -281,10 +296,12 @@ function sWorks() {
 			let timePassed = Date.now() - start;
 
 			about.style.fontSize = 64 + timePassed / 20 + "px";
+            ab.style.opacity = 0 + timePassed / 320;
         	DG.style.opacity = 1 - timePassed / 320;
             images.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
             gdT.style.opacity = 1 - timePassed / 320;
+            tStats.style.opacity = 0 + timePassed / 320;
         
         	if (timePassed > 319) backS.classList.remove('back');
    			if (timePassed > 320) clearInterval(timer);         
@@ -292,14 +309,21 @@ function sWorks() {
 			}, 20); return small1 = big1;
         }
         else {
+      		hobbies.classList.add('otherAbout');
+      		contact.classList.add('otherAbout');
+          	skills.classList.add('otherAbout');
+        	stats.classList.add('stats');
+          
         	let start = Date.now();
       	
 			let timer = setInterval(function() {
 			let timePassed = Date.now() - start;
 
 			about.style.fontSize = 64 + timePassed / 20 + "px";
+            ab.style.opacity = 0 + timePassed / 320;
         	D.style.opacity = 1 - timePassed / 320;
 			works.style.fontSize = 80 - timePassed / 20 + "px";
+            tStats.style.opacity = 0 + timePassed / 320;
         	
         	if (timePassed > 316) back.classList.remove('back');
         	if (timePassed > 318) webDesign.classList.remove('design');
@@ -352,6 +376,10 @@ function sProjects() {
     }
   
   	if (big1 === 'aboutFontSize') {
+      	hobbies.classList.add('otherAbout');
+      	contact.classList.add('otherAbout');
+     	skills.classList.add('otherAbout');
+        stats.classList.add('stats');
       
     	let start = Date.now();
   	
@@ -359,8 +387,10 @@ function sProjects() {
 		let timePassed = Date.now() - start;
 
 		about.style.fontSize = 64 + timePassed / 20 + "px";
+        ab.style.opacity = 0 + timePassed / 320;
 		projects.style.fontSize = 80 - timePassed / 20 + "px";
         project1.style.opacity = 1 - timePassed / 320;
+        tStats.style.opacity = 0 + timePassed / 320;
           
 		if (timePassed > 318) wbg.style.pointerEvents = "none";	
       	if (timePassed > 319) wbg.style.cursor = "default";
@@ -380,7 +410,13 @@ function sAbout() {
 		home.style.fontSize = 64 + timePassed / 20 + "px";
         hi.style.opacity = 0 + timePassed / 320;
 		about.style.fontSize = 80 - timePassed / 20 + "px";
+        ab.style.opacity = 1 - timePassed / 320;
+        tStats.style.opacity = 1 - timePassed / 320;
         
+        if (timePassed > 316) hobbies.classList.remove('otherAbout');
+        if (timePassed > 317) contact.classList.remove('otherAbout');
+        if (timePassed > 318) skills.classList.remove('otherAbout');
+        if (timePassed > 319) stats.classList.remove('stats');
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -399,7 +435,13 @@ function sAbout() {
 		works.style.fontSize = 64 + timePassed / 20 + "px";
         D.style.opacity = 0 + timePassed / 320;
 		about.style.fontSize = 80 - timePassed / 20 + "px";
+        ab.style.opacity = 1 - timePassed / 320;
+        tStats.style.opacity = 1 - timePassed / 320;
 		
+        if (timePassed > 316) hobbies.classList.remove('otherAbout');
+        if (timePassed > 317) contact.classList.remove('otherAbout');
+        if (timePassed > 318) skills.classList.remove('otherAbout');
+        if (timePassed > 319) stats.classList.remove('stats');
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -418,7 +460,13 @@ function sAbout() {
 		projects.style.fontSize = 64 + timePassed / 20 + "px";
 		about.style.fontSize = 80 - timePassed / 20 + "px";
         project1.style.opacity = 0 + timePassed / 320;
+        ab.style.opacity = 1 - timePassed / 320;
+        tStats.style.opacity = 1 - timePassed / 320;
 		
+        if (timePassed > 316) hobbies.classList.remove('otherAbout');
+        if (timePassed > 317) contact.classList.remove('otherAbout');
+        if (timePassed > 318) skills.classList.remove('otherAbout');
+        if (timePassed > 319) stats.classList.remove('stats');
    		if (timePassed > 320) clearInterval(timer);
 
 		}, 20);
@@ -623,3 +671,253 @@ function onEntry(entry) {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+let big2 = 'o';
+
+let small2 = "stats";
+
+function fStats() {
+  big2 = stats2();
+};
+function stats2() {
+  return big2 = 'stats';
+}
+
+function fSkills() {
+  big2 = skills2();
+};
+function skills2() {
+  return big2 = 'skills';
+} 
+
+function fContact() {
+  big2 = contact2();
+};
+function contact2() {
+  return big2 = 'contact';
+} 
+
+function fHobbies() {
+  big2 = hobbies2();
+};
+function hobbies2() {
+  return big2 = 'hobbies';
+} 
+
+function changeFontSize2() {
+  let small = small2;
+  
+  if (small === 'stats') {sStats()}
+  
+  if (small === 'skills') {sSkills()}
+  
+  if (small === 'contact') {sContact()}
+  
+  if (small === 'hobbies') {sHobbies()}
+  
+  return big2 = 'o';
+}; 
+
+function sStats() {
+	if (big2 === 'skills') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		skills.style.fontSize = 48 + timePassed / 20 + "px";
+		stats.style.fontSize = 64 - timePassed / 20 + "px";
+        tHobbies.style.opacity = 0 + timePassed / 320;
+		tStats.style.opacity = 1 - timePassed / 320;
+        
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      	return small2 = big2;
+    }
+  	if (big2 === 'contact') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		contact.style.fontSize = 48 + timePassed / 20 + "px";
+		stats.style.fontSize = 64 - timePassed / 20 + "px";
+        tHobbies.style.opacity = 0 + timePassed / 320;
+        tStats.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+  	if (big2 === 'hobbies') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		hobbies.style.fontSize = 48 + timePassed / 20 + "px";
+		stats.style.fontSize = 64 - timePassed / 20 + "px";
+        tHobbies.style.opacity = 0 + timePassed / 320;
+        tStats.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+}
+function sSkills() {
+	if (big2 === 'stats') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+		
+		stats.style.fontSize = 48 + timePassed / 20 + "px";
+		skills.style.fontSize = 64 - timePassed / 20 + "px";
+        tStats.style.opacity = 0 + timePassed / 320;
+        tSkills.style.opacity = 1 - timePassed / 320;
+
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      	return small2 = big2;
+    }
+  
+  	if (big2 === 'contact') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		contact.style.fontSize = 48 + timePassed / 20 + "px";
+		skills.style.fontSize = 64 - timePassed / 20 + "px";
+        tContact.style.opacity = 0 + timePassed / 320;
+        tSkills.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+  	if (big2 === 'hobbies') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		hobbies.style.fontSize = 48 + timePassed / 20 + "px";
+		skills.style.fontSize = 64 - timePassed / 20 + "px";
+        tHobbies.style.opacity = 0 + timePassed / 320;
+        tSkills.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+}
+function sContact() {
+	if (big2 === 'stats') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		stats.style.fontSize = 48 + timePassed / 20 + "px";
+		contact.style.fontSize = 64 - timePassed / 20 + "px";
+        tStats.style.opacity = 0 + timePassed / 320;
+        tContact.style.opacity = 1 - timePassed / 320;
+
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      	return small2 = big2;
+    }
+  
+  	if (big2 === 'skills') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		skills.style.fontSize = 48 + timePassed / 20 + "px";
+		contact.style.fontSize = 64 - timePassed / 20 + "px";
+        tSkills.style.opacity = 0 + timePassed / 320;
+        tContact.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+  	if (big2 === 'hobbies') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		hobbies.style.fontSize = 48 + timePassed / 20 + "px";
+		contact.style.fontSize = 64 - timePassed / 20 + "px";
+        tHobbies.style.opacity = 0 + timePassed / 320;
+        tContact.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+}
+function sHobbies() {
+	if (big2 === 'stats') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		stats.style.fontSize = 48 + timePassed / 20 + "px";
+		hobbies.style.fontSize = 64 - timePassed / 20 + "px";
+        tStats.style.opacity = 0 + timePassed / 320;
+        tHobbies.style.opacity = 1 - timePassed / 320;
+
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      	return small2 = big2;
+    }
+  
+  	if (big2 === 'skills') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		skills.style.fontSize = 48 + timePassed / 20 + "px";
+		hobbies.style.fontSize = 64 - timePassed / 20 + "px";
+        tSkills.style.opacity = 0 + timePassed / 320;
+        tHobbies.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+  	if (big2 === 'contact') {
+    	let start = Date.now();
+  	
+		let timer = setInterval(function() {
+		let timePassed = Date.now() - start;
+
+		contact.style.fontSize = 48 + timePassed / 20 + "px";
+		hobbies.style.fontSize = 64 - timePassed / 20 + "px";
+        tContact.style.opacity = 0 + timePassed / 320;
+        tHobbies.style.opacity = 1 - timePassed / 320;
+	
+   		if (timePassed > 320) clearInterval(timer);
+
+		}, 20);
+      return small2 = big2;
+    }
+}
