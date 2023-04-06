@@ -218,8 +218,6 @@ body {
 }
 #graphicDesign {
   	margin-left: 75%;
-  	font-size: 96px;
-	font-family: 'Tajawal-Light';
 }
 #WD {
 	opacity: 0;
@@ -248,23 +246,44 @@ body {
 	opacity: 0;
 }
 #images {
+  	height: 1810px;
   	opacity: 0;
   	margin-top: 40%;
 }
 #despair {
   	width: 400px;
-  	margin-left: 580px;
-  	margin-top: -580px;
+	margin-left: 500px;
+	margin-top: 20px;
 }
 #peace {
-  	margin-left: 200px;
-	margin-top: -250px;
+	margin-left: 110px;
+	margin-top: 430px;
+}
+#why {
+	margin-left: 460px;
+	margin-top: 680px;
 }
 #hell {
-	margin-left: 1050px;
-  	margin-top: -2500px;
+	margin-left: 1000px;
+	margin-top: 180px;
+}
+#rock {
+  	height: 550px;
+	margin-left: 800px;
+	margin-top: 500px;
+}
+#sinji {
+  	height: 550px;
+	margin-left: 35px;
+	margin-top: 1300px;
+}
+#ray {
+  	height: 450px;
+	margin-left: 950px;
+	margin-top: 1250px;
 }
 .im {
+	position: absolute;
 	opacity: 0;
     transform: translateY(50px);
 }
@@ -304,6 +323,9 @@ body {
   	width: 500px;
 }
 #project1 {
+	opacity: 0;
+}
+.project1 {
 	position: fixed;
   	font-size: 56px;
 	color: white;
@@ -326,9 +348,9 @@ body {
 #ab {
 	opacity: 0;
 }
-#plAbout {
+.plAbout {
 	position: fixed;
-  	top: 32%;
+  	top: 28%;
   	margin-left: 5%;
   	color: white;
   	width: 75px;
@@ -341,11 +363,11 @@ body {
 	top: 20%;
 	border: 0.3px solid #FFFFFF;
 }
-.stats {
+.fff {
   	text-decoration: none;
   	font-size: 64px;
 }
-.stats:hover {
+.fff:hover {
 	cursor: pointer;
 }
 .otherAbout {
@@ -356,26 +378,53 @@ body {
 	cursor: pointer;
 }
 #tAbout {
-	left: 22%;
-  	position: fixed;
+	position: fixed;
+	left: 15%;
   	top: 5%;
   	color: white;
   	font-size: 48px;
   	white-space: pre;
 }
+#tAboutT {
+	opacity: 0;
+}
 #tStats {
-  	top: -50%;
+	margin-top: -53.4%;
 	opacity: 0;
 }
 #tSkills {
+	margin-top: -53.4%;
 	opacity: 0;
 }
 #tHobbies {
+  	margin-top: -53.4%;
 	opacity: 0;
 }
 #tContact {
+	position: fixed;
+	left: 26.5%;
+  	top: 32%;
+  	color: white;
 	opacity: 0;
 }
 .t32 {
 	font-size: 32px;
+}
+.invisible {
+	opacity: 0;
+}
+.upToSky {
+	margin-top: -500%;
+}
+#ds {
+	font-size: 48px;
+}
+#cnt {
+	font-size: 48px;
+	pointer-events: none;
+	text-decoration: none;
+	color: white;
+}
+.cnt:hover {
+	cursor: pointer;
 }
